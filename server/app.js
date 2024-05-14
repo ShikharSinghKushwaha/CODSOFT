@@ -8,7 +8,6 @@ const env = require('dotenv');
 const {databaseConnection} = require('./db')
 const signUp = require('./routes/signup')
 const login = require('./routes/login');
-//const User = require('./models/user');
 const Blog = require('./models/blog')
 const posts = require('./routes/post');
 const blogs = require('./routes/blogs')
@@ -72,7 +71,7 @@ app.get('/posts/:userId/:title',async(req,res) => {
     }
 })
 
-//app.use('/posts',posts)
+
 
 app.use('/',home)
 

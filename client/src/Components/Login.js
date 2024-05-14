@@ -28,7 +28,7 @@ function Login() {
 
         axios.post('http://localhost:3001/login',login)
         .then(success => {
-            setServerMessage('Succesfully logged in' ,success)
+            //setServerMessage('Succesfully logged in' ,success)
            
              setMessage(success.data.message)
 
@@ -83,7 +83,7 @@ function Login() {
                 className={`submit-btn ${handleDisable ? 'disabled' : ''}`}>Login</button>
                 
             </form>
-            <h3>{serverMessage}</h3>
+            <h3 style={{textAlign:'center'}}>{serverMessage}</h3>
             <p className='redirect'>Don't have a Account
             <NavLink to='/signup' className='link'> Signup </NavLink></p>
         </div>

@@ -3,8 +3,10 @@ import axios from 'axios'
 import { useState, useEffect} from 'react';
 import { useNavigate, useParams ,NavLink} from 'react-router-dom'
 import '../Stylesheets/form.css'
+
 function Blog() {
   
+
   // const [blogs, setBlogs] = React.useState([])
   const navigate = useNavigate()
   const userId = localStorage.getItem('userId');
