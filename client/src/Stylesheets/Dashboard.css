@@ -1,0 +1,47 @@
+.title{
+    font-size: 29px;
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 12px;
+    margin-top:30px
+}
+
+.navbar-container{
+    width:180px;
+    height: 100vh;
+    background-color:  rgb(27,27,27);
+    padding: 15px;
+    position: fixed;
+   
+   
+}
+
+.navbar{
+   margin-top: 50px;
+   display: grid;
+   gap: 20px;
+}
+
+
+.link-text{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    width: 100% auto;
+    /* border: 1px solid gray; */
+}
+
+.social-container{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    left: 5px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid white;
+    justify-content:flex-start;
+}

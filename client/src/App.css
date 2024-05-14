@@ -1,0 +1,27 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box
+}
+
+body{
+  margin: 0;
+  padding:0;
+}
+
+
+
+.container {
+  display: flex; /* Use flexbox layout */
+}
+
+.dashboard {
+  flex: 0 0 200px; /* Fixed width for the dashboard */
+ 
+  /* Example background color */
+}
+
+.content {
+  flex-grow: 1; /* Content expands to fill available space */
+  padding: 20px; /* Example padding */
+}
