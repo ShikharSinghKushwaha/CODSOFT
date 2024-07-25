@@ -14,7 +14,7 @@ const posts = require('./routes/post');
 const blogs = require('./routes/blogs')
 env.config();
 
-databaseConnection().then('connected');
+databaseConnection();
 
 app.use(express.urlencoded({extended :true}))
 app.use(cors())
@@ -54,7 +54,7 @@ app.get('/posts/:userId/:title',async(req,res) => {
         
         if (blogWithTitle && blogWithTitle.length > 0) {
             const result = blogWithTitle.filter((blog) => {
-                if (blog.title === requestedTitle) { // Use the renamed variable here
+                if (blog.title === requestedTitle) { 
                     console.log(blog);
                     return res.send(blog);
                 }
